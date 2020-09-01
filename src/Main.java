@@ -108,6 +108,7 @@ public class Main {
         String[] ageGroups = new String[]{"6", "7", "9", "10", "11", "12",
                 "13", "14", "15", "16", "17", "18", "24", "24+"};
         int level = (int) (Math.floor(score) - 1);
+        if (level > ageGroups.length - 1) level = ageGroups.length - 1;
         return ageGroups[level];
     }
 
